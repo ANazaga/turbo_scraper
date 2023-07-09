@@ -1,11 +1,21 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
-# from scrapy.loader import ItemLoader
+from scrapy import Item, Field
 
-class TurboScraperItem(scrapy.Item):
-    title = scrapy.Field()
-    price = scrapy.Field()
+class TurboScraperItem(Item):
+    location = Field()
+    make = Field()
+    model = Field()
+    year = Field()
+    color = Field()
+    engine_displacement = Field()
+    horsepower = Field()
+    fuel_type = Field()
+    odometer = Field()
+    transmission = Field()
+    drive_train = Field()
+    body_style = Field()
+    title = Field()
+    price = Field()
+    owner = Field()
+    phone = Field()
+    link = Field()
